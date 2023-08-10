@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Cormorant+SC&display=swap');
+
+*{
+    /* width: fit-content; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--primary-text-color:red;
+--secondary-text-color:rgb(0, 0, 0);
+--accent-color:blue;
+--accent-color-dark:rgb(45, 45, 88);
+}
+body {
+    font-family: "Baloo+Bhaijaan+2", sans-serif;
+    color: var(--primary-text-color);
+    background-color: hsl(205, 100%, 91%);
+}
+
+p{
+font-family: "Baloo+Bhaijaan+2",sans-serif;
+color: var(--secondary-text-color);
+line-height: 1.4rem;
+}
+
+a{
+    text-decoration:none ;
+}
+
+ul{
+    list-style: none;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color: hsl(205, 100%, 91%);
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.main-nav {
+    width: 100%;
+    height: 70px;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.company-logo img{
+    margin-left:10px;
+    width: 90px;
+}
+.search-bar{
+    margin:0;
+    position: relative;
+    right: 10px;
+    height: 32px;
+    gap: 8px;
+}
+
+.nav-links ul {
+    gap: 22px;
+}
+.hover-link {
+    cursor: pointer;
+}
+.hover-link:hover{
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: #550ff8;
+}
+.news-input{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Baloo+Bhaijaan+2",sans-serif;
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Baloo+Bhaijaan+2",sans-serif;
+}
+.search-button:hover {
+background-color: var(--accent-color-dark);
+}
+
+main{
+    padding-block:20px;
+    margin-top:80px;
+}
+.cards-container{
+    justify-content:space-between;
+    flex-wrap:wrap;
+    row-gap:20px;
+    align-items:start;
+   
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color:#fff;
+    overflow:hidden;
+    transition:all 0.3s ease; 
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 12px;
+}
+.news-source{
+    margin-block:12px;
+}
